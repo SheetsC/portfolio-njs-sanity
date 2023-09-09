@@ -1,19 +1,14 @@
+import { getServices } from "../sanity/sanity-utils";
 import Image from 'next/image'
 import Link from 'next/link'
-import Script from 'next/script';
-import 'font-awesome/css/font-awesome.min.css';
 
 
-export default function Home() {
-  const backgroundPoolStyle = {
-    backgroundImage: 'url("https://cdn.pixabay.com/photo/2015/11/02/18/32/water-1018808_1280.jpg")',
-    backgroundSize: 'cover',  // or '600px 400px'
-    backgroundAttachment: 'fixed',
-    backgroundPosition: 'center',
-  };
-  return (
-    <div>
-      <nav className="flex items-center">
+export default async function Services(){
+    const services = await getServices();
+
+     
+    return  <div>
+        <nav className="flex items-center">
         <div className="flex items-center justify-between w-full">
           <Image  
             alt='hill country pool management logo' 
@@ -28,84 +23,26 @@ export default function Home() {
             </h1>
           </div>
           <div className='p-3'>
-            <a href='#services'className="flex relative text-blue-500">About</a>
-            <Link className='text-blue-500 flex relative' href='/services'>Services</Link>
+            <Link className='text-blue-500 flex relative' href='/'>Home</Link>
             <a className="flex relative text-blue-500" href='#contacts'>Contact Us</a>
           </div>
           
         </div>
       </nav>
-      <div style= {backgroundPoolStyle} className=' grid place-items-center p-6'>
-        <span>
-          <Link href='/admin'>
-            If You Know You Know
-          </Link>
-        </span>
-          <h1 className='text-4xl mr-5' >Servicing Northern San Antonio for over 15 years</h1>
-          <br/>
-          <br/>
-          <br/>
-          <Image
-          alt='hillcountry map'
-          width='300'
-          height='250'
-          className='rounded-lg'
-          src='https://www.google.com/maps/d/thumbnail?mid=1dkwMM6kZ027l10g4OnU1oLuFh6E'>
-
-          </Image>
-      </div>
-      <div id='services' className='flex bg-yellow-400 pt-6 justify-between'>
-        <div className='max-w-sm'> {/* Limit the width */}
-          <h1 className='text-3xl'>Our Services Include</h1>
-          <p>- Pool Management</p>
-          <p>- Service and Maintenance</p>
-          <p>- Equipment</p>
-          <p>- Renovation and Repair</p>
-          <p>- Education</p>
-        </div>
-        <div id='updates' className='pt-6'>
-          <h1>Immediate updates from technicians</h1>
-          <Image
-              alt='pool quality update image'
-              width='400'
-              height='500'
-              src='https://poolofficemanager.com/wp-content/themes/pool-office-manager/img/phone-get-the-app2.png'> 
-          </Image>
-        </div> 
-      </div>
-      <div id='contacts'>
-        <h1>Contact Us For All Your Pool Needs</h1>
-        <br/>
-        <div>
-          <p>Our New Location:  
-            <a  className='text-blue-700' href="https://www.google.com/maps?q=6335+Camp+Bullis+Rd,+San+Antonio,+TX+78257" target="_blank" rel="noopener noreferrer"> 
-              6335 Camp Bullis Rd, San Antonio, TX 78257
-              <br/>
-            </a>
-          </p>
-          <h3 className='px-6'>*Access by turning on to Carrie Louise St*</h3>
-        </div>
-        <p>Office Phone Number: 
-          <a className='text-blue-700'href="tel:+12108488516"> (210) 848-8516</a>
-        </p>
-        <p>Email Us At: 
-          <a  className='text-blue-700' href="mailto:ph@hillcountrypoolmanagement.com"> ph@hillcountrypoolmanagement.com</a>
-        </p>
-        <p>Social Media: 
-          <br/>
-          <a href="https://www.facebook.com/hillcountrypoolmgmt/" target="_blank" rel="noopener noreferrer">
-              <i className="fa fa-facebook p-2"></i>
-              <i className="fa fa-twitter "></i>
-              <i className="fa fa-instagram p-2"></i>
-          </a>
-        </p>
-      </div>
-      <div className='bg-blue-400'>
-        <div className='sk-ww-homeadvisor-reviews bg-yellow-300' data-embed-id='192037'></div>
-        <Script src='https://widgets.sociablekit.com/homeadvisor-reviews/widget.js' strategy="lazyOnload"/>
-      </div>
-      
-    </div>
-  )
+        {services.map((service) => (
+        <div key = {service._id}> 
+            {service.image && (
+                <Image
+                    src={service.image}
+                    alt={service.alt}
+                    width={250}
+                    height={100}
+                    className="object-cover rounded-lg"
+                ></Image>
+            )}
+            {service.name}
+           
+       </div>
+       
+   ))}</div>;
 }
-   
