@@ -24,7 +24,7 @@ export default async function Services(){
           </div>
           <div className='p-3'>
             <Link className='text-blue-500 flex relative' href='/'>Home</Link>
-            <a className="flex relative text-blue-500" href='#contacts'>Contact Us</a>
+            <Link className="flex relative text-blue-500" href='/#contacts'>Contact Us</Link>
           </div>
           
         </div>
@@ -44,5 +44,7 @@ export default async function Services(){
            
        </div>
        
-   ))}</div>;
+   ))}
+   
+  </div>;
 }
