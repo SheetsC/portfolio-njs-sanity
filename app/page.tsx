@@ -7,7 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 export default function Home() {
   const backgroundPoolStyle = {
     backgroundImage: 'url("https://cdn.pixabay.com/photo/2015/11/02/18/32/water-1018808_1280.jpg")',
-    backgroundSize: '100% 100%',  // or '600px 400px'
+    backgroundSize: 'cover',  // or '600px 400px'
     backgroundAttachment: 'fixed',
   };
   return (
