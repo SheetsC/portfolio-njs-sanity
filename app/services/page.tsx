@@ -1,13 +1,15 @@
 import { getServices } from "../sanity/sanity-utils";
 import Image from 'next/image'
 import Link from 'next/link'
+import { PortableText } from "@portabletext/react";
 
 
 export default async function Services(){
     const services = await getServices();
 
      
-    return  <div>
+    return  (
+    <div>
         <nav className="flex items-center">
         <div className="flex items-center justify-between w-full">
           <Image  
@@ -31,6 +33,7 @@ export default async function Services(){
       </nav>
         {services.map((service) => (
         <div key = {service._id}> 
+            {service.name}
             {service.image && (
                 <Image
                     src={service.image}
@@ -40,11 +43,13 @@ export default async function Services(){
                     className="object-cover rounded-lg"
                 ></Image>
             )}
-            {service.name}
+            
+            <PortableText value ={service.content}/>
            
        </div>
        
    ))}
    
-  </div>;
+  </div>
+    )
 }
