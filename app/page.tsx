@@ -7,7 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 export default function Home() {
   const backgroundPoolStyle = {
     backgroundImage: 'url("https://cdn.pixabay.com/photo/2015/11/02/18/32/water-1018808_1280.jpg")',
-    backgroundSize: '150% 150%',  // or '600px 400px'
+    backgroundSize: '100% 100%',  // or '600px 400px'
     backgroundAttachment: 'fixed',
   };
   return (
@@ -41,6 +41,9 @@ export default function Home() {
           </Link>
         </span>
           <h1 className='text-4xl mr-5' >Servicing Northern San Antonio for over 15 years</h1>
+          <br/>
+          <br/>
+          <br/>
           <Image
           alt='hillcountry map'
           width='300'
