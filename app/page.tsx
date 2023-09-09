@@ -52,7 +52,7 @@ export default function Home() {
       </div>
       <div id='services' className='flex bg-yellow-400 pt-6 justify-between'>
         <div className='max-w-sm'> {/* Limit the width */}
-          <h1 className='text-3xl'>Our Service Include</h1>
+          <h1 className='text-3xl'>Our Services Include</h1>
           <p>- Pool Management</p>
           <p>- Service and Maintenance</p>
           <p>- Equipment</p>
@@ -73,17 +73,18 @@ export default function Home() {
         <h1>Contact Us For All Your Pool Needs</h1>
         <br/>
         <p>Our New Location:  
-          <a href="https://www.google.com/maps?q=6335+Camp+Bullis+Rd,+San+Antonio,+TX+78257" target="_blank" rel="noopener noreferrer"> 
+          <a  className='text-blue-700' href="https://www.google.com/maps?q=6335+Camp+Bullis+Rd,+San+Antonio,+TX+78257" target="_blank" rel="noopener noreferrer"> 
              6335 Camp Bullis Rd, San Antonio, TX 78257
             <br/>
-            <h3>*Access by turning on to Carrie Louise St*</h3>
+            
           </a>
+          <h3 className='px-6'>*Access by turning on to Carrie Louise St*</h3>
         </p>
         <p>Office Phone Number: 
-          <a href="tel:+12108488516"> (210) 848-8516</a>
+          <a className='text-blue-700'href="tel:+12108488516"> (210) 848-8516</a>
         </p>
         <p>Email Us At: 
-          <a href="mailto:ph@hillcountrypoolmanagement.com"> ph@hillcountrypoolmanagement.com</a>
+          <a  className='text-blue-700' href="mailto:ph@hillcountrypoolmanagement.com"> ph@hillcountrypoolmanagement.com</a>
         </p>
         <p>Social Media: 
           <br/>
