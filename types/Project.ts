@@ -1,6 +1,6 @@
 import { PortableTextBlock } from "sanity";
 
-export type Project= {
+export type Service= {
     _id: string;
     _created_at: string;
     name: string;

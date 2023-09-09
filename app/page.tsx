@@ -76,14 +76,15 @@ export default function Home() {
       <div id='contacts'>
         <h1>Contact Us For All Your Pool Needs</h1>
         <br/>
-        <p>Our New Location:  
-          <a  className='text-blue-700' href="https://www.google.com/maps?q=6335+Camp+Bullis+Rd,+San+Antonio,+TX+78257" target="_blank" rel="noopener noreferrer"> 
-             6335 Camp Bullis Rd, San Antonio, TX 78257
-            <br/>
-            
-          </a>
+        <div>
+          <p>Our New Location:  
+            <a  className='text-blue-700' href="https://www.google.com/maps?q=6335+Camp+Bullis+Rd,+San+Antonio,+TX+78257" target="_blank" rel="noopener noreferrer"> 
+              6335 Camp Bullis Rd, San Antonio, TX 78257
+              <br/>
+            </a>
+          </p>
           <h3 className='px-6'>*Access by turning on to Carrie Louise St*</h3>
-        </p>
+        </div>
         <p>Office Phone Number: 
           <a className='text-blue-700'href="tel:+12108488516"> (210) 848-8516</a>
         </p>

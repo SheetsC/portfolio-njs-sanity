@@ -1,5 +1,5 @@
-import project from './project-schema'
+import service from './project-schema'
 
-const schemas = [project];
+const schemas = [service];
 
 export default schemas;

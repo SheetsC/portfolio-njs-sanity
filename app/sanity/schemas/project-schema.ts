@@ -1,7 +1,7 @@
-const project = {
-    name: 'project',
+const service = {
+    name: 'service',
 
-    title:'Projects',
+    title:'Services',
 
     type: 'document',
 
@@ -44,4 +44,4 @@ const project = {
         }
     ]
 }
-export default project 
+export default service 

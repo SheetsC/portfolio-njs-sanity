@@ -1,12 +1,24 @@
-import { getProjects } from "../sanity/sanity-utils";
+import { getServices } from "../sanity/sanity-utils";
+import Image from 'next/image'
+
+
 
 export default async function About(){
-    const projects = await getProjects();
+    const services = await getServices();
 
      
-    return  <div>{projects.map((project) => (
-        <div key = {project._id}> 
-           {project.name}
+    return  <div>{services.map((service) => (
+        <div key = {service._id}> 
+            {service.image && (
+                <Image
+                    src={service.image}
+                    alt={service.alt}
+                    width={250}
+                    height={100}
+                ></Image>
+            )}
+            {service.name}
+           
        </div>
        
    ))}</div>;
