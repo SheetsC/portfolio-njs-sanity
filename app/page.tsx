@@ -93,7 +93,7 @@ export default function Home() {
       <div style= {backgroundPoolStyle} className="flex sm:text-lg md:text-xl flex-col md:flex-row">
         <div className='max-w-sm mx-auto py-4 text-center' id='contacts'>
 
-          <h1 className='text-center'>Contact Us For All Your Pool Needs</h1>
+          <h1 className='text-center font-bold text-ellipsis '>Contact Us For All Your Pool Needs</h1>
           <br/>
           <div >
             <p>Our New Location:  
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
       </div>
       <div className='bg-blue-400'>
-        <div className='sk-ww-homeadvisor-reviews bg-yellow-300' data-embed-id='192037'></div>
+        <div className='sk-ww-homeadvisor-reviews' data-embed-id='192037'></div>
         <Script src='https://widgets.sociablekit.com/homeadvisor-reviews/widget.js' strategy="lazyOnload"/>
       </div>
       <div className =" flex-1 max-w-xl mx-auto text-xs text-center">
