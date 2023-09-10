@@ -58,8 +58,8 @@ export default function Home() {
       </div>
       <div id='services' className=' bg-gradient-to-b from-cyan-100 to-white pt-6 justify-between'>
         <div className = "max-w-md mx-auto">
-          <h1 className = "text-3xl text-center pb-2"> Why us?</h1>
-          <p className='p-2'>Here at HCPM we pride ourselves on our customer care, your loyalty 
+          <h1 className = "text-3xl px-3 pb-2"> Why us?</h1>
+          <p className='p-3'>Here at HCPM we pride ourselves on our customer care, your loyalty 
             means more than any 5 star review. *Though we really do appreciate the feedback*
             We do the best everytime so you can leave the worry of your pool to us. 
             If you&apos;d like to be more hands on with maitenance we can offer lessons on
@@ -71,9 +71,9 @@ export default function Home() {
         <br/>
         <div className="flex justify-between max-w-5xl mx-auto">
           <div className='max-w-sm p-1'> {/* Limit the width */}
-            <h1 className='text-3xl'>Our Services Include</h1>
+            <h1 className='text-3xl p-2'>Our Services Include</h1>
             <p>- Pool Management</p>
-            <p>- Service and Maintenance</p>
+            <p>- Service Calls</p>
             <p>- Equipment</p>
             <p>- Renovation and Repair</p>
             <p>- Education</p>
@@ -98,7 +98,7 @@ export default function Home() {
           <div >
             <p>Our New Location:  
               <a className='text-blue-700' href="https://www.google.com/maps?q=6335+Camp+Bullis+Rd,+San+Antonio,+TX+78257" target="_blank" rel="noopener noreferrer"> 
-                6335 Camp Bullis Rd, San Antonio, TX 78257
+                6335 Camp Bullis Rd, Suite#24 San Antonio, TX 78257 
                 <br/>
               </a>
             </p>
