@@ -56,7 +56,7 @@ export default function Home() {
 
           </Image>
       </div>
-      <div id='services' className=' bg-cyan-100 pt-6 justify-between'>
+      <div id='services' className=' bg-gradient-to-b from-cyan-100 to-white pt-6 justify-between'>
         <div className = "max-w-md mx-auto">
           <h1 className = "text-3xl text-center pb-2"> Why us?</h1>
           <p className='p-2'>Here at HCPM we pride ourselves on our customer care, your loyalty 
