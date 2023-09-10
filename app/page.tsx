@@ -90,14 +90,8 @@ export default function Home() {
           </div> 
         </div>
       </div>
-      <div style= {backgroundPoolStyle} className="flex flex-col md:flex-row">
-        <div className='mx-auto text-center py-4 px-1'>
-          <h1>Leave us a Review on HomeAdvisor</h1>
-          <a className='max-w-xl mx-auto'href='https://www.homeadvisor.com/write-a-review/67709698/' target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-home fa-5x mx-auto " aria-hidden="true"></i>
-          </a>
-        </div>
-        <div className='max-w-sm mx-auto text-center' id='contacts'>
+      <div style= {backgroundPoolStyle} className="flex text-xl flex-col md:flex-row">
+        <div className='max-w-sm mx-auto  text-center' id='contacts'>
           <h1 className='text-center'>Contact Us For All Your Pool Needs</h1>
           <br/>
           <div >
@@ -120,11 +114,21 @@ export default function Home() {
             <a href="https://www.facebook.com/hillcountrypoolmgmt/" target="_blank" rel="noopener noreferrer">
                 <i className="fa fa-facebook p-2"></i>
                 <i className="fa fa-twitter "></i>
-                <i className="fa fa-instagram p-2"></i>
+                
+            </a>
+            <a href= "https://www.instagram.com/hillcountrypoolmanagement/" target="_blank" rel='noopener'>
+              <i className="fa fa-instagram p-2"></i>
             </a>
           </p>
+          <br/>
+          
         </div>
-        
+        <div className='mx-auto text-center py-4 px-1'>
+          <h1>Leave us a Review on HomeAdvisor</h1>
+          <a className='max-w-xl mx-auto'href='https://www.homeadvisor.com/write-a-review/67709698/' target="_blank" rel="noopener noreferrer">
+            <i className="fa fa-home fa-5x mx-auto " aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
       <div className='bg-blue-400'>
         <div className='sk-ww-homeadvisor-reviews bg-yellow-300' data-embed-id='192037'></div>
