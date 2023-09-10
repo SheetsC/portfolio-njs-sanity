@@ -91,7 +91,8 @@ export default function Home() {
         </div>
       </div>
       <div style= {backgroundPoolStyle} className="flex sm:text-lg md:text-xl flex-col md:flex-row">
-        <div className='max-w-sm mx-auto  text-center' id='contacts'>
+        <div className='max-w-sm mx-auto py-4 text-center' id='contacts'>
+
           <h1 className='text-center'>Contact Us For All Your Pool Needs</h1>
           <br/>
           <div >
