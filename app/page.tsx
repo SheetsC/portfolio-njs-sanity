@@ -131,19 +131,19 @@ export default function Home() {
         <Script src='https://widgets.sociablekit.com/homeadvisor-reviews/widget.js' strategy="lazyOnload"/>
       </div>
       <div className =" flex-1 max-w-xl mx-auto text-center">
-          <h1 className='py-3'>
-            All rights Resereved
-            <br/>
-            Intellectual property rights belong to Connor Sheets
-            <br/>
-            Source code available on GitHub <br/> Contact  
-            <a 
-              className='text-blue-700' 
-              href="mailto:connorsheets32@gmail.com"> 
-              connorsheets32@gmail.com
-            </a>
-          </h1>
-        </div>
+        <h1 className='py-3'>
+          All rights Resereved
+          <br/>
+          Intellectual property rights belong to Connor Sheets
+          <br/>
+          Source code available on GitHub <br/> Contact  
+          <a 
+            className='text-blue-700' 
+            href="mailto:connorsheets32@gmail.com"> 
+            connorsheets32@gmail.com
+          </a>
+        </h1>
+      </div>
       
     </div>
   )
