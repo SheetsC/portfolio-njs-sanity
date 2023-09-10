@@ -91,7 +91,7 @@ export default function Home() {
         </div>
       </div>
       <div style= {backgroundPoolStyle} className="flex relative">
-        <div className='mx-auto p-4'>
+        <div className='mx-auto py-4 px-1'>
           <h1>Leave us a Review on HomeAdvisor</h1>
           <a className='max-w-xl'href='https://www.homeadvisor.com/write-a-review/67709698/' target="_blank" rel="noopener noreferrer">
             <i className="fa fa-home fa-5x" aria-hidden="true"></i>
