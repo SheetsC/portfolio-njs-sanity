@@ -90,14 +90,14 @@ export default function Home() {
           </div> 
         </div>
       </div>
-      <div style= {backgroundPoolStyle} className="flex relative">
-        <div className='mx-auto py-4 px-1'>
+      <div style= {backgroundPoolStyle} className="flex flex-col md:flex-row">
+        <div className='mx-auto text-center py-4 px-1'>
           <h1>Leave us a Review on HomeAdvisor</h1>
-          <a className='max-w-xl'href='https://www.homeadvisor.com/write-a-review/67709698/' target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-home fa-5x" aria-hidden="true"></i>
+          <a className='max-w-xl mx-auto'href='https://www.homeadvisor.com/write-a-review/67709698/' target="_blank" rel="noopener noreferrer">
+            <i className="fa fa-home fa-5x mx-auto " aria-hidden="true"></i>
           </a>
         </div>
-        <div className='max-w-md mx-auto text-center' id='contacts'>
+        <div className='max-w-sm mx-auto text-center' id='contacts'>
           <h1 className='text-center'>Contact Us For All Your Pool Needs</h1>
           <br/>
           <div >
