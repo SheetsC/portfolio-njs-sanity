@@ -134,7 +134,7 @@ export default function Home() {
         <div className='sk-ww-homeadvisor-reviews bg-yellow-300' data-embed-id='192037'></div>
         <Script src='https://widgets.sociablekit.com/homeadvisor-reviews/widget.js' strategy="lazyOnload"/>
       </div>
-      <div className =" flex-1 max-w-xl mx-auto text-center">
+      <div className =" flex-1 max-w-xl mx-auto text-xs text-center">
         <h1 className='py-3'>
           All rights Resereved
           <br/>
