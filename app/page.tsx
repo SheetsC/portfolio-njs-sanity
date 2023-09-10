@@ -13,7 +13,7 @@ export default function Home() {
     backgroundPosition: 'center',
   };
   return (
-    <div>
+    <div >
       
       <nav className="flex items-center">
         <div className="flex items-center justify-between w-full">
@@ -70,7 +70,7 @@ export default function Home() {
         <br/>
         <br/>
         <div className="flex justify-between max-w-5xl mx-auto">
-          <div className='max-w-sm '> {/* Limit the width */}
+          <div className='max-w-sm p-1'> {/* Limit the width */}
             <h1 className='text-3xl'>Our Services Include</h1>
             <p>- Pool Management</p>
             <p>- Service and Maintenance</p>
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
           
           <div id='updates' >
-            <h1>Immediate updates from technicians</h1>
+            <h1 className='p-1'>Immediate updates from technicians</h1>
             <Image
                 alt='pool quality update image'
                 width='300'
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
       </div>
       <div style= {backgroundPoolStyle} className="flex relative">
-        <div className='mx-auto py-4'>
+        <div className='mx-auto p-4'>
           <h1>Leave us a Review on HomeAdvisor</h1>
           <a className='max-w-xl'href='https://www.homeadvisor.com/write-a-review/67709698/' target="_blank" rel="noopener noreferrer">
             <i className="fa fa-home fa-5x" aria-hidden="true"></i>
@@ -136,7 +136,7 @@ export default function Home() {
           <br/>
           Intellectual property rights belong to Connor Sheets
           <br/>
-          Source code available on GitHub <br/> Contact  
+          Source code available on GitHub <br/>   
           <a 
             className='text-blue-700' 
             href="mailto:connorsheets32@gmail.com"> 
