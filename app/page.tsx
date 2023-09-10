@@ -56,15 +56,7 @@ export default function Home() {
 
           </Image>
       </div>
-      <div id='services' className='flex bg-blue-400 pt-6 justify-between'>
-        <div className='max-w-sm mx-3'> {/* Limit the width */}
-          <h1 className='text-3xl'>Our Services Include</h1>
-          <p>- Pool Management</p>
-          <p>- Service and Maintenance</p>
-          <p>- Equipment</p>
-          <p>- Renovation and Repair</p>
-          <p>- Education</p>
-        </div>
+      <div id='services' className=' bg-blue-400 pt-6 justify-between'>
         <div className = "max-w-md mx-auto">
           <h1 className = "text-3xl text-center pb-2"> Why us?</h1>
           <p>Here at HCPM we pride ourselves on our customer care, your loyalty 
@@ -75,18 +67,31 @@ export default function Home() {
             Offering the best and most trusted equipment, HCPM ensures quality and performance.
           </p>
         </div>
-        <div id='updates' className='pt-6'>
-          <h1>Immediate updates from technicians</h1>
-          <Image
-              alt='pool quality update image'
-              width='300'
-              height='400'
-              src='https://poolofficemanager.com/wp-content/themes/pool-office-manager/img/phone-get-the-app2.png'> 
-          </Image>
-        </div> 
+        <br/>
+        <br/>
+        <div className="flex justify-between max-w-5xl mx-auto">
+          <div className='max-w-sm '> {/* Limit the width */}
+            <h1 className='text-3xl'>Our Services Include</h1>
+            <p>- Pool Management</p>
+            <p>- Service and Maintenance</p>
+            <p>- Equipment</p>
+            <p>- Renovation and Repair</p>
+            <p>- Education</p>
+          </div>
+          
+          <div id='updates' >
+            <h1>Immediate updates from technicians</h1>
+            <Image
+                alt='pool quality update image'
+                width='300'
+                height='400'
+                src='https://poolofficemanager.com/wp-content/themes/pool-office-manager/img/phone-get-the-app2.png'> 
+            </Image>
+          </div> 
+        </div>
       </div>
       <div style= {backgroundPoolStyle} className="flex relative">
-        <div className='max-w-sm mx-auto'>
+        <div className='mx-auto'>
           <h1>Leave us a Review on HomeAdvisor</h1>
           <a className='max-w-xl'href='https://www.homeadvisor.com/write-a-review/67709698/' target="_blank" rel="noopener noreferrer">
             <i className="fa fa-home fa-5x" aria-hidden="true"></i>
