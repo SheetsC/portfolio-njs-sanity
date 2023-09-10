@@ -112,16 +112,16 @@ export default function Home() {
           <p>Social Media: 
             <br/>
             <a href="https://www.facebook.com/hillcountrypoolmgmt/" target="_blank" rel="noopener noreferrer">
-                <i className="fa fa-facebook p-2"></i>
-                <i className="fa fa-twitter "></i>
+                <i className="fa fa-facebook fa-2x p-2"></i>
+                <i className="fa fa-twitter fa-2x "></i>
                 
             </a>
             <a href= "https://www.instagram.com/hillcountrypoolmanagement/" target="_blank" rel='noopener'>
-              <i className="fa fa-instagram p-2"></i>
+              <i className="fa fa-instagram fa-2x p-2"></i>
             </a>
           </p>
           <br/>
-          
+
         </div>
         <div className='mx-auto text-center py-4 px-1'>
           <h1>Leave us a Review on HomeAdvisor</h1>
