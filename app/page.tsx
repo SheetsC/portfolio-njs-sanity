@@ -134,7 +134,7 @@ export default function Home() {
           <h1 className='py-3'>
             All rights Resereved
             <br/>
-            Intelectual property rights belong to Connor Sheets
+            Intellectual property rights belong to Connor Sheets
             <br/>
             Source code available on GitHub <br/> Contact  
             <a 
