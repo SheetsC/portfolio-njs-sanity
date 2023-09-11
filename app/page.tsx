@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script';
 import 'font-awesome/css/font-awesome.min.css';
+import Head from 'next/head'
 
 
 
@@ -14,7 +15,9 @@ export default function Home() {
   };
   return (
     <div >
-      
+      <Head>
+        <title>Hill Country Pool Management</title>
+      </Head>
       <nav className="flex items-center">
         <div className="flex items-center justify-between w-full">
           <Image  
@@ -37,14 +40,9 @@ export default function Home() {
           
         </div>
       </nav>
-      <div style= {backgroundPoolStyle} className=' grid place-items-center p-6'>
-        <span className='text-center'>
-          <Link href='/admin'>
-            If You Know You Know
-          </Link>
-        </span>
+      <div style= {backgroundPoolStyle} className=' grid place-items-center px-6 py-4'>
+        
           <h1 className='text-center text-4xl mr-5' >Servicing Northern San Antonio for over 15 years</h1>
-          <br/>
           <br/>
           <br/>
           <Image
@@ -57,7 +55,7 @@ export default function Home() {
           </Image>
       </div>
       <div id='services' className=' bg-gradient-to-b from-cyan-100 to-white pt-6 justify-between'>
-        <div className = "max-w-md mx-auto">
+        <div className = "max-w-2xl mx-auto">
           <h1 className = "text-3xl px-3 pb-2"> Why us?</h1>
           <p className='p-3'>Here at HCPM we pride ourselves on our customer care, your loyalty 
             means more than any 5 star review. *Though we really do appreciate the feedback*
@@ -69,7 +67,7 @@ export default function Home() {
         </div>
         <br/>
         <br/>
-        <div className="flex justify-between max-w-5xl mx-auto">
+        <div className="flex justify-between max-w-2xl mx-auto">
           <div className='max-w-sm p-1'> {/* Limit the width */}
             <h1 className='text-3xl p-2'>Our Services Include</h1>
             <p>- Pool Management</p>
@@ -137,7 +135,7 @@ export default function Home() {
       </div>
       <div className =" flex-1 max-w-xl mx-auto text-xs text-center">
         <h1 className='py-3'>
-          All rights Resereved
+          All rights Reserved
           <br/>
           Intellectual property rights belong to Connor Sheets
           <br/>

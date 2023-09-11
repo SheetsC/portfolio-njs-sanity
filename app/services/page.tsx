@@ -54,9 +54,14 @@ export default async function Services(){
    ))}
    <div className =" flex-1 max-w-xl mx-auto text-center">
         <h1 className='py-3'>
-          All rights Resereved
+          All rights Reserved
           <br/>
-          Intellectual property rights belong to Connor Sheets
+            Intellectual property rights belong to{" "}
+            <span className='text-center'>
+              <Link href='/admin'>
+                 Connor Sheets
+              </Link>
+            </span>
           <br/>
           Source code available on GitHub <br/> Contact  
           <a 
